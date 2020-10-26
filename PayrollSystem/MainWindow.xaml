@@ -1,0 +1,46 @@
+﻿<Window x:Class="PayrollSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSystem"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Haltrade Payrol System" Height="450" Width="800" Icon="/logo.jpg" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+    <Grid x:Name="MainForm">
+
+        <Rectangle Height="250" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF2281D1" Offset="1"/>
+                    <GradientStop Color="GreenYellow" Offset="1"/>
+                    <GradientStop Color="GreenYellow" Offset="0.1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <TextBlock Text="Haltrade Distribution Payroll System" FontSize="30" FontWeight="ExtraBold" HorizontalAlignment="Center" Margin="50"/>
+
+        <Rectangle Width="580" Height="255" Fill="White" Margin="0,20"  VerticalAlignment="Bottom" RadiusX="15" RadiusY="15">
+            <Rectangle.Effect>
+                <DropShadowEffect Color="#FF2281D1" Direction="0" BlurRadius="10" RenderingBias="Quality" ShadowDepth="1"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+
+        <Grid Width="490" Height="250" VerticalAlignment="Bottom" Margin="0,20">
+            <TextBlock Text="Login" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="5" Foreground="black" FontSize="18" FontWeight="Bold"/>
+
+            <StackPanel VerticalAlignment="Center" Margin="10">
+                <TextBox x:Name="email" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,5" Height="45"/>
+                <PasswordBox x:Name="password" materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"  Margin="0,5" Height="45"/>
+            </StackPanel>
+
+            <Button Height="30" Width="150" Name="Login" Click="loggingin" Background="#FF2281D1" VerticalAlignment="Bottom" Margin="0,22" Content="Login"/>
+        
+        </Grid>
+        
+        <TextBlock Text="Haltrade Distribustion (PVT) LTD. All Rights Reserved © 2020" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="9"/>
+    </Grid>
+</Window>

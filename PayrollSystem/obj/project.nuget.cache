@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tBLRVaNtTpl0hi9zOEhUi6A2uwmyMlHQhZGjwLFaPWw1vYXcAvJqfE+UDGRWI7ZcC3owNqPkZPzr9OtgUBKEuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Timothy\\source\\repos\\PayrollSystem\\PayrollSystem\\PayrollSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Timothy\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\Timothy\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
